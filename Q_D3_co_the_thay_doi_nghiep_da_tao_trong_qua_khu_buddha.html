@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q.D3. Có thể thay đổi nghiệp đã tạo trong quá khứ không?</title>
+<style>
+:root{--paper:#faf7f0;--card:#fff;--ink:#2c2620;--muted:#6f6558;--line:#e8dfcc;--gold:#8a6a1f;--gold-soft:#f4ecd9;--deep:#1e3a3a;--deep-soft:#e9f0ee}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.8}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:840px;margin:0 auto;padding:40px 22px 80px}
+.kicker{display:inline-block;font-family:Verdana,Geneva,sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+h1{font-size:34px;line-height:1.25;margin:0 0 14px}
+.subtitle{font-style:italic;color:var(--muted);font-size:18px;margin:0 0 28px}
+.answer{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:18px 24px;margin:0 0 34px}
+.answer h2{font-family:Verdana,Geneva,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.answer p{margin:10px 0}
+.toc{background:var(--deep-soft);border:1px solid var(--line);border-radius:12px;padding:20px 26px;margin:0 0 40px}
+.toc h2{font-family:Verdana,Geneva,sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--deep);margin:0 0 12px}
+.toc ol{margin:0;padding-left:22px}
+.toc li{margin:7px 0}
+.toc a{color:var(--deep)}
+section{margin:0 0 48px}
+h2.sec{font-size:25px;line-height:1.3;margin:0 0 14px}
+h2.sec .no{color:var(--gold);font-size:16px;display:block;font-family:Verdana,Geneva,sans-serif;letter-spacing:.08em;margin-bottom:4px}
+h3{font-size:20px;margin:26px 0 8px}
+blockquote{margin:18px 0;padding:14px 22px;background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;font-style:italic}
+blockquote p{margin:8px 0}
+.src{display:block;font-style:normal;font-size:13.5px;color:var(--muted);margin-top:6px}
+ul,ol{padding-left:24px}
+li{margin:6px 0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);font-size:15.5px}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:var(--deep-soft);color:var(--deep);font-family:Verdana,Geneva,sans-serif;font-size:13.5px}
+.flow{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:14px 18px;margin:16px 0;font-family:Verdana,Geneva,sans-serif;font-size:14px;line-height:1.9;text-align:center;color:var(--deep)}
+.flow b{color:var(--gold)}
+.note{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:16px 0;font-size:15.5px}
+.glossary{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:16px 0}
+.gterm{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:15px}
+.gterm b{display:block;color:var(--deep);margin-bottom:4px}
+.srcs{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 26px;margin:24px 0 0}
+.srcs h2{font-family:Verdana,Geneva,sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--deep);margin:0 0 10px}
+.srcs ol{margin:8px 0 0}
+.srcs li{font-size:15.5px}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;font-style:italic;text-align:center}
+@media(max-width:640px){h1{font-size:27px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<span class="kicker">Hỏi &amp; Đáp Phật giáo · Nghiệp và nhân quả</span>
+
+<h1>Q.D3. Có thể thay đổi nghiệp đã tạo trong quá khứ không?</h1>
+<p class="subtitle">Không thể sửa quá khứ — nhưng có thể chuyển hóa cách quá khứ tiếp tục ảnh hưởng đến hiện tại và tương lai</p>
+
+<blockquote>
+<p>Tôi đã làm sai trong quá khứ. Liệu nghiệp đó có theo tôi mãi không?</p>
+<p>Tôi đã gây tổn thương cho người khác. Có cách nào hóa giải không?</p>
+<p>Làm việc thiện có xóa được nghiệp xấu không? Sám hối, tụng kinh, niệm Phật hay làm phước có thể thay đổi quả nghiệp không?</p>
+<p>Và nếu nghiệp đã tạo rồi thì: quá khứ có còn quyền quyết định tương lai của tôi không?</p>
+</blockquote>
+
+<div class="answer">
+<h2>Trả lời ngắn gọn</h2>
+<p><strong>Không thể biến quá khứ thành chưa từng xảy ra. Nhưng có thể chuyển hóa cách những nhân cũ tiếp tục vận hành, bằng cách thay đổi các duyên hiện tại và tạo ra những nhân mới.</strong></p>
+<p>Nếu nghiệp là một bản án bất biến, con người gần như không có hy vọng. Nhưng nếu nghiệp có thể xóa sạch chỉ bằng một nghi lễ, thì nhân quả lại trở thành quá dễ dàng. Phật giáo đưa ra cách nhìn cân bằng: <strong>quá khứ có thể để lại nhân và điều kiện, nhưng không phải mọi nhân đều cho quả theo một cách đơn giản và bất biến. Hành động hiện tại vẫn đang tạo thêm duyên và có thể làm thay đổi hướng vận hành của đời sống</strong>.</p>
+</div>
+
+<nav class="toc">
+<h2>Mục lục</h2>
+<ol>
+<li><a href="#s1">“Nghiệp đã tạo” là gì — không phải món nợ trong két sắt vũ trụ</a></li>
+<li><a href="#s2">Quá khứ không thể bị xóa như chưa từng tồn tại</a></li>
+<li><a href="#s3">Nhưng không thể xóa quá khứ không có nghĩa tương lai đã bị khóa</a></li>
+<li><a href="#s4">Nghiệp không phải định mệnh</a></li>
+<li><a href="#s5">Ví dụ: người từng nóng tính</a></li>
+<li><a href="#s6">“Chuyển nghiệp” theo nghĩa sâu hơn — và việc thiện có “xóa nghiệp” không?</a></li>
+<li><a href="#s7">Sám hối — và khác biệt giữa hối hận với sám hối</a></li>
+<li><a href="#s8">Nếu đã gây tổn thương, phải làm gì?</a></li>
+<li><a href="#s9">Lễ lạy, tụng kinh, niệm Phật, bố thí — đọc đúng ý nghĩa</a></li>
+<li><a href="#s10">Kết: chuyển nghiệp là chuyển hướng tương lai</a></li>
+</ol>
+</nav>
+
+<section id="s1">
+<h2 class="sec"><span class="no">1</span>“Nghiệp đã tạo” là gì — không phải món nợ trong két sắt vũ trụ</h2>
+
+<p>Nghiệp không nên được hình dung như một món nợ nằm trong két sắt vũ trụ, hay một con số được ghi vào tài khoản vô hình. Nghiệp liên quan đến: ý hướng, hành động có chủ ý, thói quen, khuynh hướng, và các hệ quả mà chúng tạo ra.</p>
+
+<p>Ví dụ: một người thường xuyên nổi giận. Sau nhiều lần, họ trở nên dễ nổi giận hơn. Không cần một ai đứng ngoài ghi “Người này bị trừ điểm” — chính hành động lặp lại đã góp phần tạo nên <strong>một cấu trúc tâm dễ phản ứng bằng sân</strong>. Đó đã là một phần của quả.</p>
+</section>
+
+<section id="s2">
+<h2 class="sec"><span class="no">2</span>Quá khứ không thể bị xóa như chưa từng tồn tại</h2>
+
+<p>Nếu bạn đã làm tổn thương ai đó, bạn không thể quay ngược thời gian để biến sự việc thành “chưa từng xảy ra”. Lời cay nghiệt đã được nói. Vết thương có thể đã hình thành. Hậu quả có thể đã bắt đầu.</p>
+
+<blockquote><p><strong>“Thay đổi nghiệp” không nên hiểu là xóa lịch sử. Quá khứ vẫn là quá khứ.</strong></p></blockquote>
+</section>
+
+<section id="s3">
+<h2 class="sec"><span class="no">3</span>Nhưng không thể xóa quá khứ không có nghĩa tương lai đã bị khóa</h2>
+
+<p>Hãy nghĩ về một hạt giống đã được gieo. Bạn không thể khiến hạt giống chưa từng được gieo — nhưng bạn có thể thay đổi đất, nước, ánh sáng, môi trường, điều kiện phát triển. Một số hạt không đủ điều kiện nảy mầm. Một số phát triển yếu. Một số tạo quả khác nhau tùy điều kiện.</p>
+
+<p>Đây là hình ảnh tốt để hiểu: <strong>nhân quá khứ vẫn có đó, nhưng quả không nên được hình dung như một kết quả máy móc tách khỏi mọi duyên khác</strong>.</p>
+</section>
+
+<section id="s4">
+<h2 class="sec"><span class="no">4</span>Nghiệp không phải định mệnh</h2>
+
+<p>Nếu nghiệp = định mệnh, thì: “Tôi đã làm X, nên chắc chắn tôi sẽ nhận Y, vào đúng thời điểm Z.” Nhưng cách hiểu đó quá cơ học.</p>
+
+<p>Trong cách nhìn duyên khởi, một quả chịu ảnh hưởng của <strong>nhiều nhân và nhiều duyên</strong>. Cùng một nhân, nhưng điều kiện khác nhau, có thể dẫn đến những biểu hiện khác nhau. Kinh AN 6.63 nói nghiệp có thể cho quả trong hiện tại, đời sau hoặc vào một thời điểm khác — tức là thời điểm trổ quả không máy móc. [Nguồn: Kinh Tăng Chi Bộ, AN 6.63 (Aṅguttara Nikāya, AN 6.63) - Phật giáo Nam truyền (Thượng tọa bộ - Pali: Theravāda - Anh: Way of the Elders)]</p>
+
+<p>Cũng không nên hiểu máy móc kiểu: “Tôi từng làm người khác khóc → sau này chắc chắn tôi sẽ khóc đúng số lần ấy.” <strong>Nhân quả Phật giáo không nên bị biến thành một phép đối xứng một-một.</strong> Một hành động có thể tạo nhiều hệ quả: trong tâm, trong quan hệ, trong thói quen, trong hoàn cảnh — và theo thế giới quan luân hồi, trong sự tiếp nối của đời sống.</p>
+</section>
+
+<section id="s5">
+<h2 class="sec"><span class="no">5</span>Ví dụ: người từng nóng tính</h2>
+
+<p>Một người từng có thói quen nổi giận. Quá khứ đã tạo ra khuynh hướng dễ sân. Nhưng người ấy bắt đầu tu tập: mỗi khi giận — dừng lại, hít thở, quan sát, không nói ngay. Sau một thời gian, phản ứng bắt đầu chậm lại. Vài năm sau, người đó vẫn có thể nổi giận, nhưng không còn bị cơn giận điều khiển như trước.</p>
+
+<p>Điều gì đã thay đổi?</p>
+
+<div class="flow">
+Quá khứ không biến mất<br>
+Nhưng <b>dòng nhân duyên hiện tại đã thay đổi</b>
+</div>
+
+<p>Vì sao cùng một sai lầm, người này thay đổi còn người kia không? Bởi vì duyên khác nhau: người này gặp người thầy, phát khởi hổ thẹn và muốn sửa; người kia gặp môi trường xấu, tiếp tục biện minh. <strong>Cùng một quá khứ, nhưng nhân duyên hiện tại khác — do đó tương lai cũng có thể khác.</strong></p>
+
+<p>Và một người rất xấu có thể trở thành người rất tốt không? <strong>Có</strong> — nếu không, thì sẽ không có ý nghĩa của tu tập. Lịch sử tôn giáo chứa nhiều câu chuyện về những người từng sai lầm nhưng chuyển hóa sâu sắc. Quá khứ có sức nặng, nhưng <strong>không nhất thiết là bản chất vĩnh viễn của một con người</strong>.</p>
+</section>
+
+<section id="s6">
+<h2 class="sec"><span class="no">6</span>“Chuyển nghiệp” theo nghĩa sâu hơn — và việc thiện có “xóa nghiệp” không?</h2>
+
+<p>“Chuyển nghiệp” không nhất thiết có nghĩa xóa toàn bộ nghiệp xấu. Nó có thể hiểu là <strong>thay đổi các điều kiện khiến những khuynh hướng bất thiện tiếp tục được nuôi dưỡng</strong>: bạn từng tham — học cách chia sẻ; từng sân — học cách quan sát; từng nói dối — tập sống chân thật; từng làm tổn thương — học cách chịu trách nhiệm; từng chấp — học cách buông.</p>
+
+<p>Làm việc thiện có xóa nghiệp xấu không? Không nên hiểu theo công thức “việc tốt – việc xấu = 0”. Nghiệp không phải một bảng tính đơn giản. Làm một việc tốt không nhất thiết làm cho một hành động xấu chưa từng xảy ra. Nhưng việc thiện có thể: tạo nhân lành, thay đổi tâm, thay đổi thói quen, tạo những điều kiện tốt, và theo thế giới quan nghiệp, góp phần ảnh hưởng đến cách quả trổ. <strong>Làm thiện là chuyển hướng, không phải “mua chuộc” nhân quả.</strong></p>
+
+<p>Một hành động thiện rất nhỏ cũng có ý nghĩa: bạn giúp một người — người đó bớt khổ, đồng thời chính bạn đang tập cho tâm biết cho đi. Lần sau, việc giúp người dễ hơn. Sau nhiều lần, từ bi trở thành một khuynh hướng. <strong>Đó chính là một nhân mới.</strong> (tham khảo: G.C4 – Nghiệp, luân hồi và các cõi; G.C7 – Mục tiêu giải thoát)</p>
+</section>
+
+<section id="s7">
+<h2 class="sec"><span class="no">7</span>Sám hối — và khác biệt giữa hối hận với sám hối</h2>
+
+<p>Sám hối có thể thay đổi nghiệp — <strong>nếu hiểu sám hối đúng</strong>. Sám hối không phải “Tôi đọc một nghi thức, vậy mọi chuyện biến mất”. Sám hối sâu hơn là: thấy rõ sai lầm, không tự lừa dối mình, nhận trách nhiệm, ngừng lặp lại hành vi, sửa chữa điều có thể sửa, tạo những nhân mới tốt hơn.</p>
+
+<blockquote>
+<p><strong>Hối hận</strong>: “Giá mà tôi đừng làm.” — Nhưng rồi vẫn làm lại. Hối hận có thể chỉ tạo đau đớn.</p>
+<p><strong>Sám hối</strong>: “Tôi thấy rõ mình đã làm sai.” — Rồi thay đổi hành động. Sám hối có thể tạo chuyển hóa.</p>
+</blockquote>
+
+<p>Có một điều rất đẹp: con người không bị đóng đinh bởi lỗi lầm của mình. Nếu bạn thực sự thấy lỗi, thực sự sửa, thực sự thay đổi, thì <strong>quá khứ trở thành một phần của con đường tỉnh thức</strong>. Một người từng đau có thể hiểu đau; từng sai có thể học cách không lặp lại; từng ích kỷ có thể học cho đi.</p>
+</section>
+
+<section id="s8">
+<h2 class="sec"><span class="no">8</span>Nếu đã gây tổn thương, phải làm gì?</h2>
+
+<p>Một cách rất thực tế, bốn bước:</p>
+
+<ol>
+<li><strong>Nhận lỗi</strong> — không đổ cho hoàn cảnh.</li>
+<li><strong>Xin lỗi</strong> — không kèm theo “nhưng tại bạn…”.</li>
+<li><strong>Sửa chữa</strong> — nếu có thể bù đắp, hãy bù đắp.</li>
+<li><strong>Không lặp lại</strong> — đây là phần quan trọng nhất. Nếu xin lỗi rồi lại làm y như cũ, thì sự chuyển hóa chưa xảy ra.</li>
+</ol>
+
+<p>Vậy xin lỗi có “xóa nghiệp” không? Không nên dùng từ “xóa”. Xin lỗi có thể tạo một nhân mới: sửa quan hệ, giảm tổn thương, tạo lại niềm tin, thay đổi thái độ — và quan trọng nhất là thay đổi chính người đã gây lỗi. Nhưng <strong>người bị tổn thương có quyền không tha thứ ngay, thậm chí có quyền giữ khoảng cách</strong>. Sám hối của bạn không bắt buộc người khác phải quên.</p>
+
+<div class="note">
+<strong>Về trách nhiệm:</strong> Nếu bạn từng làm sai, đừng dùng chữ “nghiệp” để tự an ủi “Tôi làm vậy vì nghiệp”. Hãy nói: <strong>“Tôi đã lựa chọn như vậy. Tôi chịu trách nhiệm. Bây giờ tôi sẽ thay đổi.”</strong> Đó mới là tinh thần trưởng thành. Và cũng đừng biến “nghiệp có thể chuyển hóa” thành “mọi hậu quả đều có thể biến mất”: trách nhiệm vẫn tồn tại; có những điều không thể lấy lại; có những người không quay trở lại; có những vết thương cần rất lâu để lành. Chính vì vậy, sửa mình ngay hôm nay càng trở nên quan trọng.
+</div>
+</section>
+
+<section id="s9">
+<h2 class="sec"><span class="no">9</span>Lễ lạy, tụng kinh, niệm Phật, bố thí — đọc đúng ý nghĩa</h2>
+
+<p><strong>Làm lễ</strong> có thể có giá trị nếu nó giúp tâm hướng thiện, tạo động lực sửa sai, nuôi dưỡng lòng biết ơn, làm tăng chánh niệm, giúp con người sống tốt hơn. Nhưng không nên hiểu nghi lễ là một cơ chế vật lý xóa nghiệp — kiểu “Tôi đã gây tổn thương mười năm, hôm nay làm một nghi lễ nên hậu quả tự động biến mất”. Đó là cách hiểu quá đơn giản về nhân quả.</p>
+
+<p><strong>Tụng kinh</strong> có thể có ích — nhưng giá trị không chỉ nằm ở âm thanh đọc, mà ở <strong>tâm được chuyển hóa như thế nào</strong>. Nếu tụng kinh xong vẫn sân, vẫn tham, vẫn làm tổn thương, thì phần thực hành sâu chưa xảy ra. Nếu tụng kinh giúp tâm lắng xuống, thấy lỗi, phát nguyện thay đổi, sống tử tế hơn — nó trở thành duyên cho chuyển hóa.</p>
+
+<p><strong>Niệm Phật</strong> trong các truyền thống Tịnh độ và Phật giáo Đại thừa (Sanskrit: Mahāyāna - Anh: Great Vehicle) có những ý nghĩa sâu liên quan đến tín, nguyện, hành, chánh niệm, tâm hướng về Phật và chuyển hóa đời sống. Nhưng nếu biến nó thành “một chiếc máy xóa nghiệp” — “Niệm đủ số lần thì mọi nghiệp xấu tự động bị xóa” — thì làm nghèo đi ý nghĩa tu tập. Điều quan trọng là: <strong>tâm có thực sự chuyển không?</strong></p>
+
+<p><strong>Bố thí</strong> có thể tạo nhân lành. Nhưng không nên hiểu “Tôi đã làm sai rất nhiều, giờ tôi cho tiền là xóa hết”. Bố thí sâu không chỉ là đưa tiền — nó còn là giảm bớt chấp thủ, tập buông, tập cho đi, tập nghĩ đến người khác. Điều được thay đổi không chỉ là hoàn cảnh bên ngoài, mà là <strong>cấu trúc của tâm</strong>.</p>
+</section>
+
+<section id="s10">
+<h2 class="sec"><span class="no">10</span>Kết: chuyển nghiệp là chuyển hướng tương lai</h2>
+
+<p>Có một câu rất đáng nhớ:</p>
+
+<blockquote><p><strong>Không phải chỉ thay đổi những gì xảy đến với mình; mà là thay đổi người đang đón nhận những điều ấy.</strong></p></blockquote>
+
+<p>Nếu tâm vẫn đầy tham, dù hoàn cảnh thay đổi, ta vẫn tìm cái để tham. Nếu tâm vẫn đầy sân, dù đổi người khác, ta vẫn tìm lý do để giận. Nếu tâm bớt chấp, cùng một hoàn cảnh, ta có thể khổ ít hơn rất nhiều. Đó là chuyển hóa sâu.</p>
+
+<p>Và đây có thể là ý nghĩa sâu nhất của “chuyển nghiệp”:</p>
+
+<div class="flow">
+Không phải xóa quá khứ → mà là <b>không tiếp tục sống theo quán tính của quá khứ</b><br>
+Không phải trốn quả → mà là <b>ngừng gieo thêm nhân tương tự</b><br>
+Không phải mua sự tha thứ → mà là <b>thật sự thay đổi</b><br>
+Không phải cầu cuộc đời thuận lợi → mà là <b>trở thành người đối diện cuộc đời bằng trí tuệ hơn</b>
+</div>
+
+<p>Một phút quán niệm về quá khứ, nếu bạn muốn thực hành: ngồi yên, hít vào, thở ra. Nhớ lại một điều mình từng làm mà mình hối tiếc. Đừng chạy trốn, cũng đừng tự hành hạ. Chỉ nhìn: “Điều đó đã xảy ra.” Rồi hỏi: “Tôi đã học được gì? Tôi còn có thể sửa điều gì? Tôi đang lặp lại điều đó ở đâu trong hiện tại? Tôi có thể tạo nhân mới nào?” Rồi thở ra, tự nhắc: <strong>Tôi không thể làm quá khứ chưa từng xảy ra. Nhưng tôi có thể không để quá khứ tiếp tục tạo ra cùng một nỗi đau.</strong> (tham khảo: M.B3 – Làm việc với xao lãng và thái độ thực hành)</p>
+
+<p>Đừng tự nhốt mình trong câu “Tôi đã tạo nghiệp xấu, nên đời tôi sẽ mãi như thế” — câu ấy biến hành động thành danh tính. Có thể nói “Tôi đã tạo những hành động bất thiện” (mở ra khả năng sửa), khác với “Tôi là người xấu” (khóa con người vào mặc cảm). Hãy nhớ:</p>
+
+<blockquote>
+<p><strong>Quá khứ không thể xóa. Nhưng tương lai chưa được viết xong.</strong></p>
+<p><strong>Bạn không thể sửa điều đã xảy ra. Nhưng bạn vẫn có thể sửa người đang tiếp tục tạo ra ngày mai.</strong></p>
+</blockquote>
+</section>
+
+<div class="srcs">
+<h2>Chú giải</h2>
+<div class="glossary">
+<div class="gterm"><b>Nghiệp (Pali: kamma - Anh: intentional action)</b>Hành động có chủ ý của thân, khẩu, ý cùng hệ quả nhân quả của nó — không phải một bản án hay món nợ được ghi sổ.</div>
+<div class="gterm"><b>Chuyển nghiệp (Anh: transformation of kamma)</b>Chuyển hóa cách các nhân cũ vận hành bằng thay đổi duyên hiện tại và tạo nhân mới; không phải xóa lịch sử hay trốn quả.</div>
+<div class="gterm"><b>Sám hối (Anh: repentance / sincere reflection on past mistakes)</b>Thấy rõ lỗi, nhận trách nhiệm, sửa chữa, không lặp lại, tạo nhân mới. Khác với hối hận — chỉ day dứt mà không thay đổi.</div>
+<div class="gterm"><b>Duyên khởi (Pali: paṭiccasamuppāda - Anh: dependent origination)</b>Nguyên lý: quả phát sinh nhờ nhiều nhân và duyên; cùng một nhân với duyên khác nhau có thể cho biểu hiện khác nhau.</div>
+<div class="gterm"><b>Quả nghiệp (Pali: kammavipāka - Anh: result of kamma)</b>Hệ quả của hành động có chủ ý; có thể trổ ở các thời điểm khác nhau.</div>
+<div class="gterm"><b>Công đức (Pali: puñña - Anh: merit)</b>Những hành động và trạng thái tâm thiện tạo điều kiện tốt, nuôi dưỡng tâm và hỗ trợ con đường tu tập — không phải “điểm số để mua lại nghiệp”.</div>
+<div class="gterm"><b>Khuynh hướng (Pali: anusaya - Anh: latent tendency)</b>Xu hướng tiềm ẩn của tâm được củng cố qua lặp lại; có thể được chuyển hóa bằng thực hành.</div>
+<div class="gterm"><b>Vô ngã (Pali: anattā - Anh: non-self)</b>Con người là tiến trình duyên sinh, không phải bản chất cố định — nhờ vậy “tôi là người xấu” không phải bản chất vĩnh viễn.</div>
+<div class="gterm"><b>Hổ thẹn và tàm quý (Pali: hiri-ottappa - Anh: moral shame and fear of wrongdoing)</b>Hai thái độ nội tâm bảo vệ hành vi đạo đức: thẹn với mình và sợ lỗi với người; động lực của sửa sai chân thật.</div>
+</div>
+</div>
+
+<div class="srcs">
+<h2>Nguồn kinh điển</h2>
+<ol>
+<li><strong>Kinh Tăng Chi Bộ, AN 6.63 (Aṅguttara Nikāya, AN 6.63)</strong> — nghiệp là ý định; quả nghiệp theo nhiều thời điểm; Bát Chánh Đạo là con đường dẫn đến sự chấm dứt nghiệp — Phật giáo Nam truyền (Thượng tọa bộ - Pali: Theravāda - Anh: Way of the Elders).</li>
+<li><strong>Kinh Tăng Chi Bộ, AN 3.100 (Aṅguttara Nikāya, AN 3.100)</strong> — nghiệp có thể trổ quả theo các thời điểm khác nhau; thiện và bất thiện nghiệp không thể quy về một công thức đơn giản — Phật giáo Nam truyền.</li>
+<li><strong>Kinh Tăng Chi Bộ, AN 8.40 (Aṅguttara Nikāya, AN 8.40)</strong> — nghiệp thân, khẩu, ý và hệ quả — Phật giáo Nam truyền.</li>
+<li><strong>Kinh Pháp Cú, DhP 119–120 (Dhammapada, DhP 119–120)</strong> — nghiệp ác chưa chín có thể thấy như mật ngọt; khi chín quả mới hiện — ví hạt giống cần thời gian — Phật giáo Nam truyền.</li>
+<li><strong>Kinh Tương Ưng Bộ, Nidāna-saṃyutta (Tương Ưng Nhân Duyên, SN 12)</strong> — duyên khởi: nhiều điều kiện cùng tạo quả — Phật giáo Nam truyền.</li>
+</ol>
+<p class="src">Các cách phân loại chi tiết về nghiệp (nghiệp đã cho quả, có khả năng cho quả, đang tạo điều kiện…) khác nhau giữa các truyền thống. Bài viết trình bày hướng phổ thông, không đưa một diễn giải duy nhất làm quan điểm của toàn bộ Phật giáo, và không hứa hẹn mọi hậu quả quá khứ chắc chắn biến mất.</p>
+</div>
+
+<footer>Bài thuộc nhóm “Nghiệp và nhân quả” — Hỏi &amp; Đáp Phật giáo. Bài liên quan: Q.D1 – Nghiệp có thật sự quyết định số phận con người không? · Q.D2 – Có phải mọi đau khổ trong đời đều do nghiệp của chính mình? · Q.D4 – Nếu nghiệp quyết định mọi thứ, con người có cần cố gắng nữa không?</footer>
+
+</div>
+</body>
+</html>
