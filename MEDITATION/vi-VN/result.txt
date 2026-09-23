@@ -85,6 +85,9 @@ M_G2_6_thien_ho_tro_quan_ly_cang_thang.html
 M_G2_7_thien_ho_tro_giac_ngu.html
 M_G2_8_thien_ho_tro_ung_pho_dau_va_kho_chiu.html
 M_G2_9_thien_tu_bi_trong_boi_canh_suc_khoe.html
+_1_MEDI_add_ref_spans_v2.py
+_2_MEDI_update_html_references.py
+_3_MEDI_update_html_references.py
 _inject_html_reference_tags_inline.py
 _inject_navigators.py
 _meditation_theory_vi-VN.md

@@ -1,0 +1,28 @@
+trong folder \COMMON\MEDITATION\vi-VN có các file bài viết ".html" về Phật giáo, viết bằng tiếng Việt.
+
+hãy cho tôi phiên bản tiếng Hàn Quốc của các bài viết trên vào folder \COMMON\MEDITATION\ko-KR
+
+không chỉ là dịch trực tiếp mà cần phải có logic, khoa học, đúng đắn và phù hợp với ngữ cảnh Phật giáo và tinh thần Phật giáo.
+
+file COMMON\GENERAL\ko-KR\G_A1_hieu_ve_phat_giao.html là 1 bài viết bằng tiếng Hàn Quốc hoàn chỉnh bạn có thể tham khảo.
+
+tên bài viết mới thì vẫn dùng tên bài viết cũ.
+giữ nguyên cấu trúc file html và các tag, format.
+
+các lưu ý khi dịch:
+# case 1 (lấy từ tiếng anh ra ngoài):
+"tam học (Pali: tisso sikkhā - Anh: three trainings)"
+giờ sẽ là:
+"세 번의 훈련 (팔리어: tisso sikkhā - 영어: three trainings)"
+# case 2:
+Phật giáo Kim Cương thừa (Sanskrit: Vajrayāna)
+giờ sẽ là:
+금강승 불교(산스크리트어: Vajrayāna)
+# case 3:
+[Nguồn: Kinh Pháp Cú, kệ 188–192 (Dhammapada, verses 188–192) - Phật giáo Nam truyền]
+giờ sẽ là (left part is translated korean text, right part is the english version which is kept the same (Dhammapada, verses 188–192), last part is translated korean text):
+[<korean text> (Dhammapada, verses 188–192) - 테라바다 불교]
+# case 5 (bỏ phần giải thích Hán-Việt, thay bằng giải thích bằng tiếng Hàn Quốc, kèm tiếng Anh phía sau):
+Sám hối (Hán–Việt, tự nhận lỗi để lòng nhẹ - Anh: repentance)
+giờ sẽ là:
+<korean word> (<korean text that explains the word> - 영어: repentance)
